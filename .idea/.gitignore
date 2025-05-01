@@ -1,0 +1,21 @@
+# IntelliJ IDEA files
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Compiled files
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Selenium files
+*.log
+*.png
+*.html

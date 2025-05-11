@@ -8,8 +8,8 @@ import utils.HelperMethods;
 public class BasePage {
     protected WebDriver driver;
 
-    public BasePage() {
-        this.driver = DriverManager.getDriver();
+    public BasePage(WebDriver driver) {
+        this.driver = driver;
     }
 
     // Common elements

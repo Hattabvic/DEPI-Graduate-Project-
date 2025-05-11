@@ -2,16 +2,17 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import java.time.Duration;
 
 public class LoginPage {
-
-    WebDriver driver;
+    private WebDriver driver;
 
     // Locators
     private By usernameField = By.id("user-name");
     private By passwordField = By.id("password");
     private By loginButton = By.id("login-button");
-    private By errorMessage = By.cssSelector("[data-test='error']");
 
     // Constructor
     public LoginPage(WebDriver driver) {
@@ -19,25 +20,15 @@ public class LoginPage {
     }
 
     // Actions
-    public void enterUsername(String username) {
-        driver.findElement(usernameField).sendKeys(username);
-    }
-
-    public void enterPassword(String password) {
-        driver.findElement(passwordField).sendKeys(password);
-    }
-
-    public void clickLogin() {
-        driver.findElement(loginButton).click();
-    }
-
     public void login(String username, String password) {
-        enterUsername(username);
-        enterPassword(password);
-        clickLogin();
-    }
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.presenceOfElementLocated(usernameField));
+        driver.findElement(usernameField).sendKeys(username);
 
-    public String getErrorMessage() {
-        return driver.findElement(errorMessage).getText();
+        driver.findElement(passwordField).sendKeys(password);
+        driver.findElement(loginButton).click();
+
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.urlContains("inventory.html"));
     }
 }

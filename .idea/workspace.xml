@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51d5124b-c9e8-49da-a416-e9ef50aadbd6" name="Changes" comment="" />
+    <list default="true" id="51d5124b-c9e8-49da-a416-e9ef50aadbd6" name="Changes" comment="last upadates">
+      <change afterPath="$PROJECT_DIR$/selenium-automation-final-project/src/test/java/pages/ProductsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-automation-final-project/src/test/java/tests/ProductsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selenium-automation-final-project/src/test/java/tests/iLoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-automation-final-project/src/main/java/utils/ConfigReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/selenium-automation-final-project/src/main/java/utils/ConfigReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-automation-final-project/src/main/java/utils/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/selenium-automation-final-project/src/main/java/utils/DriverManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-automation-final-project/src/main/java/utils/HelperMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/selenium-automation-final-project/src/main/java/utils/HelperMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-automation-final-project/src/test/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/selenium-automation-final-project/src/test/java/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-automation-final-project/src/test/java/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/selenium-automation-final-project/src/test/java/pages/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-automation-final-project/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/selenium-automation-final-project/src/test/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-automation-final-project/src/test/java/pages/ProductPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-automation-final-project/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/selenium-automation-final-project/src/test/java/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-automation-final-project/src/test/java/tests/CartPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/selenium-automation-final-project/src/test/java/tests/CartPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-automation-final-project/src/test/java/tests/LoginTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-automation-final-project/src/test/java/tests/ProductPageTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-automation-final-project/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/selenium-automation-final-project/src/test/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium-automation-final-project/src/test/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/selenium-automation-final-project/src/test/resources/testng.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,11 +38,28 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Hattabvic&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Hattabvic/DEPI-Graduate-Project-.git&quot;,
+    &quot;accountId&quot;: &quot;26c0363a-ec10-44c4-910f-256c6d8849f2&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/selenium-automation-final-project/src/test/java/tests/LoginTest.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2wVX8sTbR5veNUPJsmqFAJobjsm" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -32,23 +67,37 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "TestNG.C:/Users/NEXT STORE/OneDrive/Desktop/final project automation/selenium-automation-final-project/src/test/resources/testng.xml.executor": "Run",
+    "TestNG.CartPageTest.executor": "Run",
+    "TestNG.CartPageTest.verifyCartIconUpdatesOnAdd.executor": "Run",
+    "TestNG.CartPageTest.verifyCheckoutNavigation.executor": "Run",
     "TestNG.First.executor": "Run",
     "TestNG.First.openSwagLabs.executor": "Run",
     "TestNG.LoginTest.executor": "Run",
+    "TestNG.ProductsTest.executor": "Run",
+    "TestNG.ProductsTest.verifyProductImagesDisplay.executor": "Run",
     "TestNG.first.openSwagLabs.executor": "Run",
-    "git-widget-placeholder": "master",
+    "TestNG.iLoginTest.executor": "Run",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.5443038",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+    "settings.editor.selected.configurable": "settings.qodana"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.LoginTest">
-    <configuration name="First" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="CartPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="selenium-automation" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="First" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.ProductsPageTest" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CartPageTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -56,19 +105,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="First.openSwagLabs" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="selenium-automation" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="First" />
-      <option name="METHOD_NAME" value="openSwagLabs" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CartPageTest.verifyCartIconUpdatesOnAdd" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="selenium-automation" />
       <extension name="coverage">
         <pattern>
@@ -77,7 +114,43 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.CartPageTest" />
+      <option name="METHOD_NAME" value="verifyCartIconUpdatesOnAdd" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CartPageTest.verifyCheckoutNavigation" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="selenium-automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CartPageTest" />
+      <option name="METHOD_NAME" value="verifyCheckoutNavigation" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="selenium-automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.ProductsPageTest" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ProductsTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -85,11 +158,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="first.openSwagLabs" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductsTest.verifyProductImagesDisplay" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="selenium-automation" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="first" />
-      <option name="METHOD_NAME" value="openSwagLabs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.ProductsPageTest" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ProductsTest" />
+      <option name="METHOD_NAME" value="verifyProductImagesDisplay" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -99,10 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginTest" />
-        <item itemvalue="TestNG.first.openSwagLabs" />
-        <item itemvalue="TestNG.First.openSwagLabs" />
-        <item itemvalue="TestNG.First" />
+        <item itemvalue="TestNG.CartPageTest.verifyCheckoutNavigation" />
+        <item itemvalue="TestNG.ProductsTest" />
+        <item itemvalue="TestNG.ProductsTest.verifyProductImagesDisplay" />
+        <item itemvalue="TestNG.CartPageTest" />
+        <item itemvalue="TestNG.CartPageTest.verifyCartIconUpdatesOnAdd" />
       </list>
     </recent_temporary>
   </component>
@@ -116,5 +196,32 @@
       <updated>1746127563377</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="last upadates" />
+    <option name="LAST_COMMIT_MESSAGE" value="last upadates" />
   </component>
 </project>

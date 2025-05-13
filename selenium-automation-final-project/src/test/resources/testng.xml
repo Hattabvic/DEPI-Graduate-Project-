@@ -20,4 +20,7 @@
             <class name="tests.CheckoutTest"/>
         </classes>
     </test>
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
 </suite>

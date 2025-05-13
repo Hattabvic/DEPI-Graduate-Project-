@@ -1,5 +1,6 @@
 package tests;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -8,7 +9,6 @@ import pages.LoginPage;
 import pages.ProductsPage;
 import utils.ConfigReader;
 import utils.DriverManager;
-import org.openqa.selenium.By;
 import utils.HelperMethods;
 
 public class CartPageTest extends BaseTest {

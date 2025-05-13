@@ -11,6 +11,8 @@ import utils.DriverManager;
 import org.openqa.selenium.By;
 import utils.HelperMethods;
 
+import java.util.Objects;
+
 public class CartPageTest extends BaseTest {
 
     private ProductsPage productsPage;
@@ -57,7 +59,7 @@ public class CartPageTest extends BaseTest {
         System.out.println("Navigated to Cart page after adding product. Current URL: " + driver.getCurrentUrl());
 
         // Verify navigation using URL directly
-        Assert.assertTrue(driver.getCurrentUrl().contains("cart.html"),
+        Assert.assertTrue(Objects.requireNonNull(driver.getCurrentUrl()).contains("cart.html"),
                 "Failed to navigate to Cart page (URL check failed)");
         System.out.println("Cart page loaded successfully");
     }
@@ -117,7 +119,7 @@ public class CartPageTest extends BaseTest {
     @Test(priority = 7, description = "Verify Checkout button redirects to the checkout page")
     public void verifyCheckoutNavigation() {
         cartPage.clickCheckout();
-        Assert.assertTrue(driver.getCurrentUrl().contains("checkout-step-one.html"),
+        Assert.assertTrue(Objects.requireNonNull(driver.getCurrentUrl()).contains("checkout-step-one.html"),
                 "Checkout button did not redirect to the checkout page");
         System.out.println("Redirected to checkout page. Current URL: " + driver.getCurrentUrl());
     }

@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51d5124b-c9e8-49da-a416-e9ef50aadbd6" name="Changes" comment="solve DriverManager issues">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="51d5124b-c9e8-49da-a416-e9ef50aadbd6" name="Changes" comment="Add more test cases">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-automation-final-project/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/selenium-automation-final-project/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium-automation-final-project/src/test/java/tests/CartPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/selenium-automation-final-project/src/test/java/tests/CartPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/selenium-automation-final-project/src/test/java/tests/ProductsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/selenium-automation-final-project/src/test/java/tests/ProductsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,39 +49,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;TestNG.C:/Users/NEXT STORE/OneDrive/Desktop/final project automation/selenium-automation-final-project/src/test/resources/testng.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.CartPageTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.CartPageTest.verifyCartIconUpdatesOnAdd.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.CartPageTest.verifyCartItemPricing.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.CartPageTest.verifyCheckoutNavigation.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.CartPageTest.verifyContinueShoppingNavigation.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.CartPageTest.verifyMultipleItemsAddedToCart.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.First.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.First.openSwagLabs.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ProductsTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ProductsTest.verifyCartBadgeCounter.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ProductsTest.verifyProductDetailsPage.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ProductsTest.verifyProductFiltering.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ProductsTest.verifyProductFilteringByName.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ProductsTest.verifyProductImagesDisplay.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ProductsTest.verifyProductSorting.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ProductsTest.verifyRemoveButtonFunctionality.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ProductsTest.verifyResetAppStateFunctionality.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.first.openSwagLabs.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.iLoginTest.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.5443038&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.qodana&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "TestNG.C:/Users/NEXT STORE/OneDrive/Desktop/final project automation/selenium-automation-final-project/src/test/resources/testng.xml.executor": "Run",
+    "TestNG.CartPageTest.executor": "Run",
+    "TestNG.CartPageTest.verifyCartIconUpdatesOnAdd.executor": "Run",
+    "TestNG.CartPageTest.verifyCartItemPricing.executor": "Run",
+    "TestNG.CartPageTest.verifyCheckoutNavigation.executor": "Run",
+    "TestNG.CartPageTest.verifyContinueShoppingNavigation.executor": "Run",
+    "TestNG.CartPageTest.verifyMultipleItemsAddedToCart.executor": "Run",
+    "TestNG.First.executor": "Run",
+    "TestNG.First.openSwagLabs.executor": "Run",
+    "TestNG.LoginTest.executor": "Run",
+    "TestNG.ProductsTest.executor": "Run",
+    "TestNG.ProductsTest.verifyCartBadgeCounter.executor": "Run",
+    "TestNG.ProductsTest.verifyCartItemRemoval.executor": "Run",
+    "TestNG.ProductsTest.verifyCheckoutFormValidation.executor": "Run",
+    "TestNG.ProductsTest.verifyProductDescriptionPage.executor": "Run",
+    "TestNG.ProductsTest.verifyProductDetailsPage.executor": "Run",
+    "TestNG.ProductsTest.verifyProductFiltering.executor": "Run",
+    "TestNG.ProductsTest.verifyProductFilteringByName.executor": "Run",
+    "TestNG.ProductsTest.verifyProductImagesDisplay.executor": "Run",
+    "TestNG.ProductsTest.verifyProductSorting.executor": "Run",
+    "TestNG.ProductsTest.verifyRemoveButtonFunctionality.executor": "Run",
+    "TestNG.ProductsTest.verifyResetAppStateFunctionality.executor": "Run",
+    "TestNG.first.openSwagLabs.executor": "Run",
+    "TestNG.iLoginTest.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.5443038",
+    "settings.editor.selected.configurable": "settings.qodana"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="TestNG.ProductsTest">
     <configuration name="ProductsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="selenium-automation" />
@@ -122,7 +121,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductsTest.verifyProductDetailsPage" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductsTest.verifyCartItemRemoval" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="selenium-automation" />
       <extension name="coverage">
         <pattern>
@@ -132,7 +131,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.ProductsTest" />
-      <option name="METHOD_NAME" value="verifyProductDetailsPage" />
+      <option name="METHOD_NAME" value="verifyCartItemRemoval" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -140,7 +139,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductsTest.verifyProductFiltering" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductsTest.verifyCheckoutFormValidation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="selenium-automation" />
       <extension name="coverage">
         <pattern>
@@ -150,7 +149,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.ProductsTest" />
-      <option name="METHOD_NAME" value="verifyProductFiltering" />
+      <option name="METHOD_NAME" value="verifyCheckoutFormValidation" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -158,7 +157,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductsTest.verifyProductSorting" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductsTest.verifyProductDescriptionPage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="selenium-automation" />
       <extension name="coverage">
         <pattern>
@@ -168,7 +167,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.ProductsTest" />
-      <option name="METHOD_NAME" value="verifyProductSorting" />
+      <option name="METHOD_NAME" value="verifyProductDescriptionPage" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -179,10 +178,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.ProductsTest" />
+        <item itemvalue="TestNG.ProductsTest.verifyProductDescriptionPage" />
+        <item itemvalue="TestNG.ProductsTest.verifyCheckoutFormValidation" />
+        <item itemvalue="TestNG.ProductsTest.verifyCartItemRemoval" />
         <item itemvalue="TestNG.ProductsTest.verifyCartBadgeCounter" />
-        <item itemvalue="TestNG.ProductsTest.verifyProductDetailsPage" />
-        <item itemvalue="TestNG.ProductsTest.verifyProductSorting" />
-        <item itemvalue="TestNG.ProductsTest.verifyProductFiltering" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747134340858</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add more test cases">
+      <option name="closed" value="true" />
+      <created>1747134414645</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747134414645</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -232,6 +239,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="last upadates" />
     <MESSAGE value="solve DriverManager issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="solve DriverManager issues" />
+    <MESSAGE value="Add more test cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add more test cases" />
   </component>
 </project>

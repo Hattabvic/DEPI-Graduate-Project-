@@ -319,4 +319,89 @@ public class ProductsTest extends BaseTest {
         Assert.assertEquals(badgeCount, 4, "Cart badge didn't update after removal");
     }
 
+
+    @Test(priority = 14, description = "Verify item removal from cart page")
+    public void verifyCartItemRemoval() {
+        // 1. Add an item to cart if none exists
+        if (driver.findElements(By.cssSelector(".shopping_cart_badge")).isEmpty()) {
+            driver.findElement(By.cssSelector(".btn_inventory")).click();
+        }
+
+        // 2. Navigate to cart
+        driver.findElement(By.cssSelector(".shopping_cart_link")).click();
+        Assert.assertTrue(driver.getCurrentUrl().contains("cart.html"), "Did not navigate to cart page");
+
+        // 3. Verify item exists in cart
+        List<WebElement> cartItems = driver.findElements(By.cssSelector(".cart_item"));
+        Assert.assertFalse(cartItems.isEmpty(), "No items found in cart");
+
+        // 4. Remove item
+        String removedItemName = driver.findElement(By.cssSelector(".inventory_item_name")).getText();
+        driver.findElement(By.cssSelector(".cart_button")).click();
+
+        // 5. Verify removal
+        new WebDriverWait(driver, Duration.ofSeconds(3))
+                .until(ExpectedConditions.invisibilityOf(cartItems.get(0)));
+
+        // 6. Verify badge updates
+        Assert.assertTrue(driver.findElements(By.cssSelector(".shopping_cart_badge")).isEmpty(),
+                "Cart badge should disappear after removing last item");
+
+        // 7. Verify continue shopping works
+        driver.findElement(By.id("continue-shopping")).click();
+        Assert.assertTrue(driver.getCurrentUrl().contains("inventory.html"),
+                "Did not return to products page");
+
+        // 8. Verify removed item shows "ADD TO CART" again
+        List<WebElement> allProducts = driver.findElements(By.cssSelector(".inventory_item_name"));
+        WebElement removedProduct = allProducts.stream()
+                .filter(p -> p.getText().equals(removedItemName))
+                .findFirst()
+                .orElseThrow();
+
+        Assert.assertEquals(removedProduct.findElement(By.xpath("./ancestor::div[@class='inventory_item']//button")).getText(),
+                "Add to cart",
+                "Item button didn't reset after removal");
+    }
+
+    @Test(priority = 15, description = "Verify product description page content")
+    public void verifyProductDescriptionPage() {
+        // 1. Store first product's details from inventory
+        WebElement firstProduct = driver.findElement(By.cssSelector(".inventory_item"));
+        String listName = firstProduct.findElement(By.cssSelector(".inventory_item_name")).getText();
+        String listPrice = firstProduct.findElement(By.cssSelector(".inventory_item_price")).getText();
+        String listDesc = firstProduct.findElement(By.cssSelector(".inventory_item_desc")).getText();
+
+        // 2. Navigate to product details
+        firstProduct.findElement(By.cssSelector(".inventory_item_name")).click();
+        new WebDriverWait(driver, Duration.ofSeconds(3))
+                .until(ExpectedConditions.urlContains("inventory-item.html"));
+
+        // 3. Verify all detail elements exist
+        Assert.assertTrue(driver.findElement(By.cssSelector(".inventory_details_img")).isDisplayed(),
+                "Product image missing");
+        Assert.assertTrue(driver.findElement(By.cssSelector(".inventory_details_name")).isDisplayed(),
+                "Product name missing");
+        Assert.assertTrue(driver.findElement(By.cssSelector(".inventory_details_price")).isDisplayed(),
+                "Product price missing");
+        Assert.assertTrue(driver.findElement(By.cssSelector(".inventory_details_desc")).isDisplayed(),
+                "Product description missing");
+        Assert.assertTrue(driver.findElement(By.cssSelector(".btn_inventory")).isDisplayed(),
+                "Add to cart button missing");
+
+        // 4. Verify content matches inventory listing
+        Assert.assertEquals(driver.findElement(By.cssSelector(".inventory_details_name")).getText(),
+                listName, "Name mismatch");
+        Assert.assertEquals(driver.findElement(By.cssSelector(".inventory_details_price")).getText(),
+                listPrice, "Price mismatch");
+        Assert.assertEquals(driver.findElement(By.cssSelector(".inventory_details_desc")).getText(),
+                listDesc, "Description mismatch");
+
+        // 5. Verify back-to-products functionality
+        driver.findElement(By.id("back-to-products")).click();
+        Assert.assertTrue(driver.getCurrentUrl().endsWith("inventory.html"),
+                "Did not return to product list");
+    }
+
+
 }
